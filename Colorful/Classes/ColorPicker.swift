@@ -17,6 +17,12 @@ public final class ColorPicker: UIControl {
             return hsvColor.uiColor
         }
     }
+    
+    public var hexColor: String {
+        get {
+            return hsvColor.rgbColor.hexString
+        }
+    }
 
     private let brightnessCursor = BrightnessCursor()
     private let brightnessSlider = BrightnessSlider()
